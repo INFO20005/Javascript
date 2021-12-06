@@ -1,31 +1,31 @@
 <html>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <div id="chooseDifficulty" style="display: block">
+    <div id="chooseDifficulty" style="display: block">
 
-            <h1>Guess a Word</h1>
+        <h1>Guess a Word</h1>
 
-            <button title="lets gooo" onclick="difficultylevel1()">easy</button>
-            <button title="not difficult" onclick="difficultylevel2()">normal</button>
-            <button title="a challenge" onclick="difficultylevel3()">hard</button>
+        <button title="lets gooo" onclick="difficultylEasy()">easy</button>
+        <button title="not difficult" onclick="difficultyMedium()">normal</button>
+        <button title="a challenge" onclick="difficultyHard()">hard</button>
 
-        </div>
+    </div>
 
-        <div id="startButton" style="display: none">
+    <div id="startButton" style="display: none">
 
-            <h1>Guess a Word</h1>
-            <button onclick="start()">Start</button>
-            <p>Note: Some words may contain a hyphen(-) ex: X-ray</p>
+        <h1>Guess a Word</h1>
+        <button onclick="start()">Start</button>
+        <p>Note: Some words may contain a hyphen(-) ex: X-ray</p>
 
-        </div>
+    </div>
 
-        <div id="mainGame" style="display: none">
+    <div id="mainGame" style="display: none">
 
         <p id="question"></p>
 
@@ -35,38 +35,38 @@
             <button onclick="enterGuess()">Enter Guess</button>
         </div>
 
-        </div>
+    </div>
 
-        <div id="RRguess" style="display: block">
+    <div id="RRguess" style="display: block">
 
         <p id="rightGuess"></p>
-        <p id ="wrongGuess"></p>
-        <p id ="guessesLeft"></p>
+        <p id="wrongGuess"></p>
+        <p id="guessesLeft"></p>
 
+    </div>
+
+    <div id="youLose" style="display: none">
+
+        <h1>You Lose</h1>
+
+        <div>
+            <button onclick="restart()">Play again?</button>
         </div>
 
-        <div id="youLose" style="display: none">
+        <p id="correctWordWas"></p>
 
-            <h1>You Lose</h1>
+    </div>
 
-            <div>
-                <button onclick="restart()">Play again?</button>
-            </div>
+    <div id="youWin" style="display: none">
 
-            <p id="correctWordWas"></p>
+        <h2>You Win</h2>
 
+        <div>
+            <button onclick="restart()">Play again?</button>
         </div>
 
-        <div id="youWin" style="display: none">
+    </div>
 
-            <h2>You Win</h2>
-
-            <div>
-                <button onclick="restart()">Play again?</button>
-            </div>
-
-        </div>
-
-    </body>
+</body>
 
 </html>
